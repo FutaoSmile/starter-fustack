@@ -1,0 +1,2 @@
+# 自动配置类
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=com.futao.starter.fustack.autoconfiguration.wx.miniprogram.WxMiniProgramAutoConfiguration
