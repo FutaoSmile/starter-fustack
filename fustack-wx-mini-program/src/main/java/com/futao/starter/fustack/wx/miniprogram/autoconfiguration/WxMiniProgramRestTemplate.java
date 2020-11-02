@@ -1,4 +1,4 @@
-package com.futao.starter.fustack.wx.miniprogram;
+package com.futao.starter.fustack.wx.miniprogram.autoconfiguration;
 
 import com.futao.starter.fustack.wx.miniprogram.exception.WxMiniProgramException;
 import org.springframework.http.client.ClientHttpRequestInterceptor;

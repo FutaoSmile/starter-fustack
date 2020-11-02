@@ -36,3 +36,7 @@
     3. 在[resources/META-INF/spring.factories](resources/META-INF/spring.factories)文件的`org.springframework.boot.autoconfigure.EnableAutoConfiguration`属性下加入新写的自动配置类，并用逗号分隔
     4. 打包，发布
         
+
+### # 版本发布
+* 地址: jitpack.io
+* github上设置release

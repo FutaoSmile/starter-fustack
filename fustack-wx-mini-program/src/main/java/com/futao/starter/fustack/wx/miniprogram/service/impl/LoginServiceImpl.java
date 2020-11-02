@@ -1,8 +1,8 @@
 package com.futao.starter.fustack.wx.miniprogram.service.impl;
 
 import com.futao.starter.fustack.consts.Consts;
-import com.futao.starter.fustack.wx.miniprogram.WxMiniProgramConfig;
-import com.futao.starter.fustack.wx.miniprogram.WxMiniProgramProperties;
+import com.futao.starter.fustack.wx.miniprogram.autoconfiguration.WxMiniProgramConfig;
+import com.futao.starter.fustack.wx.miniprogram.autoconfiguration.WxMiniProgramProperties;
 import com.futao.starter.fustack.wx.miniprogram.model.resuslt.AuthCode;
 import com.futao.starter.fustack.wx.miniprogram.service.LoginService;
 import org.springframework.beans.factory.annotation.Autowired;

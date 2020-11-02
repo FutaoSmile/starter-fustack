@@ -9,21 +9,17 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>fustack-autoconfiguration</artifactId>
+    <artifactId>fustack-db</artifactId>
+
 
     <dependencies>
         <dependency>
-            <groupId>com.futao</groupId>
-            <artifactId>fustack-wx-mini-program</artifactId>
-            <!--optional: 该依赖对当前项目来说是必须的，但是对于依赖当前项目的子项目来说不是必须的-->
-            <optional>true</optional>
+            <groupId>com.baomidou</groupId>
+            <artifactId>mybatis-plus-boot-starter</artifactId>
         </dependency>
-
         <dependency>
             <groupId>com.futao</groupId>
-            <artifactId>fustack-db</artifactId>
-            <!--optional: 该依赖对当前项目来说是必须的，但是对于依赖当前项目的子项目来说不是必须的-->
-            <optional>true</optional>
+            <artifactId>fustack-foundation</artifactId>
         </dependency>
     </dependencies>
 

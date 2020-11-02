@@ -26,6 +26,8 @@
         <!--常量-->
         <module>fustack-consts</module>
         <module>demo-test</module>
+        <module>fustack-db</module>
+        <module>fustack-foundation</module>
     </modules>
 
     <properties>
@@ -63,6 +65,11 @@
     <dependencyManagement>
         <dependencies>
             <dependency>
+                <groupId>com.baomidou</groupId>
+                <artifactId>mybatis-plus-boot-starter</artifactId>
+                <version>3.4.0</version>
+            </dependency>
+            <dependency>
                 <groupId>com.github.ulisesbocchio</groupId>
                 <artifactId>jasypt-spring-boot-starter</artifactId>
                 <version>3.0.3</version>
@@ -79,7 +86,17 @@
             </dependency>
             <dependency>
                 <groupId>com.futao</groupId>
+                <artifactId>fustack-db</artifactId>
+                <version>0.0.1-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>com.futao</groupId>
                 <artifactId>fustack-autoconfiguration</artifactId>
+                <version>0.0.1-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>com.futao</groupId>
+                <artifactId>fustack-foundation</artifactId>
                 <version>0.0.1-SNAPSHOT</version>
             </dependency>
             <dependency>

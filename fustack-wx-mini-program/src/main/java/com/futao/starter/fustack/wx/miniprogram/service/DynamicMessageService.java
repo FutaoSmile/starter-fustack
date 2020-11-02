@@ -1,6 +1,10 @@
 package com.futao.starter.fustack.wx.miniprogram.service;
 
+import com.futao.starter.fustack.wx.miniprogram.model.WxBaseResult;
+import com.futao.starter.fustack.wx.miniprogram.model.request.Message;
+import com.futao.starter.fustack.wx.miniprogram.model.request.SubscribeMessage;
 import com.futao.starter.fustack.wx.miniprogram.model.resuslt.DynamicMessageCreateResult;
+import org.springframework.http.ResponseEntity;
 
 /**
  * @author futao
@@ -12,4 +16,21 @@ public interface DynamicMessageService {
      * @return
      */
     DynamicMessageCreateResult createActivityId();
+
+    /**
+     * 下发小程序和公众号统一的服务消息
+     * https://developers.weixin.qq.com/miniprogram/dev/api-backend/open-api/uniform-message/uniformMessage.send.html
+     *
+     * @param message
+     * @return
+     */
+    ResponseEntity<WxBaseResult> sendUniformMessage(Message message);
+
+    /**
+     * 发送微信小程序订阅消息
+     *
+     * @param message
+     * @return
+     */
+    WxBaseResult sendSubscribeMessage(SubscribeMessage message);
 }

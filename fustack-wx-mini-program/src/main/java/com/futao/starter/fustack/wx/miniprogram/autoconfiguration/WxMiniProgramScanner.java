@@ -1,4 +1,4 @@
-package com.futao.starter.fustack.wx.miniprogram;
+package com.futao.starter.fustack.wx.miniprogram.autoconfiguration;
 
 import org.springframework.context.annotation.ComponentScan;
 

@@ -1,7 +1,6 @@
 package com.futao.starter.fustack.autoconfiguration.wx.miniprogram;
 
-import com.futao.starter.fustack.wx.miniprogram.WxMiniProgramScanner;
-import com.futao.starter.fustack.wx.miniprogram.WxMiniProgramProperties;
+import com.futao.starter.fustack.wx.miniprogram.autoconfiguration.*;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnClass;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
