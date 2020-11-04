@@ -1,4 +1,4 @@
-package com.futao.starter.fustack.db.entity.autoconfiguration;
+package com.futao.starter.fustack.db;
 
 import com.baomidou.mybatisplus.core.handlers.MetaObjectHandler;
 import com.futao.starter.fusstack.foundation.user.CurrentUserId;

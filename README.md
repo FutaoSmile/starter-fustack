@@ -1,3 +1,42 @@
+## # 在项目中使用此依赖
+* use in gradle project
+    * Step 1. Add the JitPack repository to your build file
+    * Step 2. Add the dependency
+    
+```gradle
+
+allprojects {
+    repositories {
+        ...
+        maven { url 'https://jitpack.io' }
+    }
+}
+
+dependencies {
+        implementation 'com.github.FutaoSmile:starter-fustack:Tag'
+}
+```
+* use in maven project
+    * Step 1: Add the JitPack repository to your build file
+    * Step 2. Add the dependency
+
+```xml
+<repositories>
+    <repository>
+        <id>jitpack.io</id>
+        <url>https://jitpack.io</url>
+    </repository>
+</repositories>
+
+<dependency>
+    <groupId>com.github.FutaoSmile</groupId>
+    <artifactId>starter-fustack</artifactId>
+    <version>Tag</version>
+</dependency>
+```
+* [点击查看最新版本 >>>](https://jitpack.io/#FutaoSmile/starter-fustack)
+
+
 ### # 配置文件加密 jasypt
 * https://github.com/ulisesbocchio/jasypt-spring-boot
 * 依赖

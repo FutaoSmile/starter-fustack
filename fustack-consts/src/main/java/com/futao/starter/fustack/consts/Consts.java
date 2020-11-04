@@ -18,4 +18,8 @@ public class Consts {
         //微信api服务器域名
         public static final String WX_API_DOMAIN = "https://api.weixin.qq.com";
     }
+
+    public static class TencentCloudShortMessage {
+        public static final String BASE_NAME = "tencent-cloud-short-message";
+    }
 }
