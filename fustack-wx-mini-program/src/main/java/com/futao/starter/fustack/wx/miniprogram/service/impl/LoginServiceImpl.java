@@ -1,6 +1,6 @@
 package com.futao.starter.fustack.wx.miniprogram.service.impl;
 
-import com.futao.starter.fustack.consts.Consts;
+import com.futao.starter.fustack.consts.Constants;
 import com.futao.starter.fustack.wx.miniprogram.autoconfiguration.WxMiniProgramConfig;
 import com.futao.starter.fustack.wx.miniprogram.autoconfiguration.WxMiniProgramProperties;
 import com.futao.starter.fustack.wx.miniprogram.model.resuslt.AuthCode;
@@ -23,7 +23,7 @@ public class LoginServiceImpl implements LoginService {
     @Override
     public AuthCode getOpenIdByCode(String code) {
 
-        String uriString = UriComponentsBuilder.fromHttpUrl(Consts.WxMiniProgram.WX_API_DOMAIN + "/sns/jscode2session")
+        String uriString = UriComponentsBuilder.fromHttpUrl(Constants.WxMiniProgram.WX_API_DOMAIN + "/sns/jscode2session")
                 .queryParam("appid", wxMiniProgramProperties.getAppId())
                 .queryParam("secret", wxMiniProgramProperties.getAppSecret())
                 .queryParam("js_code", code)

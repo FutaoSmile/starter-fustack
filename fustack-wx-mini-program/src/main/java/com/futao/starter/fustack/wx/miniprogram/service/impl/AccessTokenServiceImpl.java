@@ -1,7 +1,7 @@
 package com.futao.starter.fustack.wx.miniprogram.service.impl;
 
 import com.alibaba.fastjson.JSON;
-import com.futao.starter.fustack.consts.Consts;
+import com.futao.starter.fustack.consts.Constants;
 import com.futao.starter.fustack.consts.RedisKeyConsts;
 import com.futao.starter.fustack.wx.miniprogram.autoconfiguration.WxMiniProgramConfig;
 import com.futao.starter.fustack.wx.miniprogram.autoconfiguration.WxMiniProgramProperties;
@@ -44,7 +44,7 @@ public class AccessTokenServiceImpl implements AccessTokenService {
         if (StringUtils.isBlank(redisAccessToken)) {
             //无缓存
             String url = UriComponentsBuilder
-                    .fromHttpUrl(Consts.WxMiniProgram.WX_API_DOMAIN + "/cgi-bin/token")
+                    .fromHttpUrl(Constants.WxMiniProgram.WX_API_DOMAIN + "/cgi-bin/token")
                     .queryParam("grant_type", "client_credential")
                     .queryParam("appid", wxMiniProgramProperties.getAppId())
                     .queryParam("secret", wxMiniProgramProperties.getAppSecret())

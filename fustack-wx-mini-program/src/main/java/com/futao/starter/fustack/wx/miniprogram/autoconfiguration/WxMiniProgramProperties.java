@@ -1,6 +1,6 @@
 package com.futao.starter.fustack.wx.miniprogram.autoconfiguration;
 
-import com.futao.starter.fustack.consts.Consts;
+import com.futao.starter.fustack.consts.Constants;
 import com.futao.starter.fustack.wx.miniprogram.exception.WxMiniProgramException;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.boot.context.properties.ConfigurationProperties;
@@ -17,7 +17,7 @@ public class WxMiniProgramProperties {
     /**
      * 微信小程序配置前缀
      */
-    public static final String PROPERTY_PREFIX = Consts.System.FRAMEWORK_BASE_NAME + "." + Consts.WxMiniProgram.WX_MINI_PROGRAM_BASE_NAME;
+    public static final String PROPERTY_PREFIX = Constants.System.FRAMEWORK_BASE_NAME + "." + Constants.WxMiniProgram.WX_MINI_PROGRAM_BASE_NAME;
 
     /**
      * AppID(小程序ID)

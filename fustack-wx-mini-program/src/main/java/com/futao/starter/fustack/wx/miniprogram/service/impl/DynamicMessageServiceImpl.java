@@ -1,6 +1,6 @@
 package com.futao.starter.fustack.wx.miniprogram.service.impl;
 
-import com.futao.starter.fustack.consts.Consts;
+import com.futao.starter.fustack.consts.Constants;
 import com.futao.starter.fustack.wx.miniprogram.autoconfiguration.WxMiniProgramConfig;
 import com.futao.starter.fustack.wx.miniprogram.model.WxBaseResult;
 import com.futao.starter.fustack.wx.miniprogram.model.request.Message;
@@ -33,7 +33,7 @@ public class DynamicMessageServiceImpl implements DynamicMessageService {
     @Override
     public DynamicMessageCreateResult createActivityId() {
         String url = UriComponentsBuilder
-                .fromHttpUrl(Consts.WxMiniProgram.WX_API_DOMAIN + "/cgi-bin/message/wxopen/activityid/create")
+                .fromHttpUrl(Constants.WxMiniProgram.WX_API_DOMAIN + "/cgi-bin/message/wxopen/activityid/create")
                 // 手动加上请求参数accessToken
 //                .queryParam("access_token", accessTokenService.get())
                 .build()
@@ -56,7 +56,7 @@ public class DynamicMessageServiceImpl implements DynamicMessageService {
     @Deprecated
     @Override
     public ResponseEntity<WxBaseResult> sendUniformMessage(Message message) {
-        String url = UriComponentsBuilder.fromHttpUrl(Consts.WxMiniProgram.WX_API_DOMAIN + "/cgi-bin/message/wxopen/template/uniform_send")
+        String url = UriComponentsBuilder.fromHttpUrl(Constants.WxMiniProgram.WX_API_DOMAIN + "/cgi-bin/message/wxopen/template/uniform_send")
                 .build()
                 .encode()
                 .toString();
@@ -72,7 +72,7 @@ public class DynamicMessageServiceImpl implements DynamicMessageService {
      */
     @Override
     public WxBaseResult sendSubscribeMessage(SubscribeMessage message) {
-        String url = UriComponentsBuilder.fromHttpUrl(Consts.WxMiniProgram.WX_API_DOMAIN + "/cgi-bin/message/subscribe/send")
+        String url = UriComponentsBuilder.fromHttpUrl(Constants.WxMiniProgram.WX_API_DOMAIN + "/cgi-bin/message/subscribe/send")
                 .build()
                 .encode()
                 .toString();

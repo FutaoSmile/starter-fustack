@@ -6,7 +6,7 @@ package com.futao.starter.fustack.consts;
  * @author futao
  * @date 2020/10/29
  */
-public class Consts {
+public class Constants {
 
     public static class System {
         public static final String FRAMEWORK_BASE_NAME = "fustack";
@@ -21,5 +21,9 @@ public class Consts {
 
     public static class TencentCloudShortMessage {
         public static final String BASE_NAME = "tencent-cloud-short-message";
+    }
+
+    public static class Web {
+        public static final String BASE_NAME = "web";
     }
 }

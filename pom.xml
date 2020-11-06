@@ -29,6 +29,7 @@
         <module>fustack-db</module>
         <module>fustack-foundation</module>
         <module>fustack-tencent-cloud-short-message</module>
+        <module>fustack-web</module>
     </modules>
 
     <properties>

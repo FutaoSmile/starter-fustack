@@ -10,6 +10,6 @@ public class RedisKeyConsts {
 
     public static class WxMiniProgram {
         //微信accessToken
-        public static final String WX_ACCESS_TOKEN = Consts.System.FRAMEWORK_BASE_NAME + SEPARATOR + Consts.WxMiniProgram.WX_MINI_PROGRAM_BASE_NAME + SEPARATOR + "accessToken";
+        public static final String WX_ACCESS_TOKEN = Constants.System.FRAMEWORK_BASE_NAME + SEPARATOR + Constants.WxMiniProgram.WX_MINI_PROGRAM_BASE_NAME + SEPARATOR + "accessToken";
     }
 }

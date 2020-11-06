@@ -1,6 +1,6 @@
 package com.futao.starter.fustack.tencent.cloud.shortmessage.autoconfiguration;
 
-import com.futao.starter.fustack.consts.Consts;
+import com.futao.starter.fustack.consts.Constants;
 import com.futao.starter.fustack.tencent.cloud.shortmessage.exception.TencentCloudShortMessageException;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.boot.context.properties.ConfigurationProperties;
@@ -12,7 +12,7 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 @ConfigurationProperties(prefix = TencentCloudShortMessageProperties.PROPERTY_PREFIX)
 public class TencentCloudShortMessageProperties {
 
-    public static final String PROPERTY_PREFIX = Consts.System.FRAMEWORK_BASE_NAME + "." + Consts.TencentCloudShortMessage.BASE_NAME;
+    public static final String PROPERTY_PREFIX = Constants.System.FRAMEWORK_BASE_NAME + "." + Constants.TencentCloudShortMessage.BASE_NAME;
 
     private String appId;
 
