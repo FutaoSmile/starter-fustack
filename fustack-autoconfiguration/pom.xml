@@ -33,6 +33,20 @@
             <optional>true</optional>
         </dependency>
 
+        <dependency>
+            <groupId>com.futao</groupId>
+            <artifactId>fustack-auth</artifactId>
+            <!--optional: 该依赖对当前项目来说是必须的，但是对于依赖当前项目的子项目来说不是必须的-->
+            <optional>true</optional>
+        </dependency>
+
+        <dependency>
+            <groupId>com.futao</groupId>
+            <artifactId>fustack-exceptions</artifactId>
+            <!--optional: 该依赖对当前项目来说是必须的，但是对于依赖当前项目的子项目来说不是必须的-->
+            <optional>true</optional>
+        </dependency>
+
     </dependencies>
 
 </project>

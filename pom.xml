@@ -30,6 +30,8 @@
         <module>fustack-foundation</module>
         <module>fustack-tencent-cloud-short-message</module>
         <module>fustack-web</module>
+        <module>fustack-auth</module>
+        <module>fustack-exceptions</module>
     </modules>
 
     <properties>
@@ -88,6 +90,21 @@
             <dependency>
                 <groupId>com.futao</groupId>
                 <artifactId>fustack-consts</artifactId>
+                <version>0.0.1-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>com.futao</groupId>
+                <artifactId>fustack-web</artifactId>
+                <version>0.0.1-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>com.futao</groupId>
+                <artifactId>fustack-exceptions</artifactId>
+                <version>0.0.1-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>com.futao</groupId>
+                <artifactId>fustack-auth</artifactId>
                 <version>0.0.1-SNAPSHOT</version>
             </dependency>
             <dependency>

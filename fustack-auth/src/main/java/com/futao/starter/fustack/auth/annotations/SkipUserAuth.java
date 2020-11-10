@@ -1,4 +1,4 @@
-package com.futao.starter.fustack.web.annotations;
+package com.futao.starter.fustack.auth.annotations;
 
 import java.lang.annotation.*;
 

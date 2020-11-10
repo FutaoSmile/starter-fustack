@@ -2,4 +2,6 @@
 org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
   com.futao.starter.fustack.autoconfiguration.wx.miniprogram.WxMiniProgramAutoConfiguration,\
   com.futao.starter.fustack.autoconfiguration.db.DbAutoConfiguration,\
-  com.futao.starter.fustack.autoconfiguration.tecent.cloud.shortmessage.TencentCloudShortMessageAutoConfiguration
+  com.futao.starter.fustack.autoconfiguration.tecent.cloud.shortmessage.TencentCloudShortMessageAutoConfiguration,\
+  com.futao.starter.fustack.autoconfiguration.auth.AuthAutoConfiguration,\
+  com.futao.starter.fustack.autoconfiguration.exceptions.ExceptionAutoConfiguration
