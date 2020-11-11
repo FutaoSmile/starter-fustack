@@ -1,4 +1,4 @@
-package com.futao.starter.fustack.web.result;
+package com.futao.starter.fustack.consts.model;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -59,11 +59,11 @@ public class RestResult<T> {
      * @param t
      * @return
      */
-    public static RestResult<Throwable> failWithReason(String message, Throwable t) {
-        RestResult<Throwable> objectRestResult = new RestResult<>();
+    public static RestResult<StackTraceElement[]> failWithReason(String message, Throwable t) {
+        RestResult<StackTraceElement[]> objectRestResult = new RestResult<>();
         objectRestResult.setCode(99);
         objectRestResult.setMessage(message);
-        objectRestResult.setData(t);
+        objectRestResult.setData(t.getStackTrace());
         return objectRestResult;
     }
 

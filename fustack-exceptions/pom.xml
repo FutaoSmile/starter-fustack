@@ -19,7 +19,7 @@
         </dependency>
         <dependency>
             <groupId>com.futao</groupId>
-            <artifactId>fustack-web</artifactId>
+            <artifactId>fustack-consts</artifactId>
         </dependency>
     </dependencies>
 </project>

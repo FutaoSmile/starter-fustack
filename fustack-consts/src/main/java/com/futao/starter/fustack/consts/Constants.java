@@ -8,6 +8,10 @@ package com.futao.starter.fustack.consts;
  */
 public class Constants {
 
+    public static class Time {
+        public static final String DATE_TIME_COMPLETE = "yyyy-MM-dd HH:mm:ss";
+    }
+
     public static class System {
         public static final String FRAMEWORK_BASE_NAME = "fustack";
     }
@@ -25,5 +29,13 @@ public class Constants {
 
     public static class Web {
         public static final String BASE_NAME = "web";
+    }
+
+
+    public static class Auth {
+        public static final String BASE_NAME = "auth";
+        public static final String TOKEN_PREFIX = "Bearer ";
+        public static final String USER_ID = "userId";
+        public static final String EXPIRE = "expire";
     }
 }

@@ -1,5 +1,7 @@
 package com.futao.starter.fustack.web.result;
 
+import com.futao.starter.fustack.consts.model.RestResult;
+import com.futao.starter.fustack.exceptions.ApplicationException;
 import com.futao.starter.fustack.web.annotations.SkipResultWrapper;
 import com.futao.starter.fustack.web.autoconfiguration.WebProperties;
 import lombok.extern.slf4j.Slf4j;
@@ -58,6 +60,9 @@ public class RestResultAdvice implements ResponseBodyAdvice<Object> {
     @Override
     public Object beforeBodyWrite(Object body, MethodParameter returnType, MediaType selectedContentType, Class<? extends HttpMessageConverter<?>> selectedConverterType, ServerHttpRequest request, ServerHttpResponse response) {
         log.debug("-");
+        if (body instanceof String) {
+            throw new ApplicationException("请使用SingleValueResult<String>()封装String类型返回值");
+        }
         if (!(body instanceof RestResult)) {
             log.debug("return value is restResult already");
             return RestResult.success(body);

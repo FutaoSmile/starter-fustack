@@ -21,6 +21,10 @@
             <groupId>com.futao</groupId>
             <artifactId>fustack-foundation</artifactId>
         </dependency>
+        <dependency>
+            <groupId>com.futao</groupId>
+            <artifactId>fustack-consts</artifactId>
+        </dependency>
     </dependencies>
 
 </project>

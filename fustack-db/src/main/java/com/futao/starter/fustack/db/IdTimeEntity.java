@@ -4,6 +4,8 @@ import com.baomidou.mybatisplus.annotation.FieldFill;
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableId;
+import com.fasterxml.jackson.annotation.JsonFormat;
+import com.futao.starter.fustack.consts.Constants;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -34,6 +36,7 @@ public class IdTimeEntity {
     /**
      * 创建时间
      */
+    @JsonFormat(pattern = Constants.Time.DATE_TIME_COMPLETE, timezone = "GMT+8")
     @TableField(fill = FieldFill.INSERT)
     private LocalDateTime createDateTime;
 
@@ -46,6 +49,7 @@ public class IdTimeEntity {
     /**
      * 修改时间
      */
+    @JsonFormat(pattern = Constants.Time.DATE_TIME_COMPLETE, timezone = "GMT+8")
     @TableField(fill = FieldFill.UPDATE)
     private LocalDateTime updateDateTime;
 
