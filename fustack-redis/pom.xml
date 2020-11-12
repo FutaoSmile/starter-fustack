@@ -9,13 +9,15 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>demo-test</artifactId>
+    <artifactId>fustack-redis</artifactId>
+
+    <description>基于Redis做的一些扩展</description>
 
 
     <dependencies>
         <dependency>
-            <groupId>com.github.ulisesbocchio</groupId>
-            <artifactId>jasypt-spring-boot-starter</artifactId>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-redis</artifactId>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -23,21 +25,19 @@
         </dependency>
         <dependency>
             <groupId>com.futao</groupId>
-            <artifactId>fustack-wx-mini-program</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>com.futao</groupId>
-            <artifactId>fustack-autoconfiguration</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>com.futao</groupId>
-            <artifactId>fustack-auth</artifactId>
+            <artifactId>fustack-utils</artifactId>
         </dependency>
         <dependency>
             <groupId>com.futao</groupId>
-            <artifactId>fustack-redis</artifactId>
+            <artifactId>fustack-consts</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>cn.hutool</groupId>
+            <artifactId>hutool-all</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.futao</groupId>
+            <artifactId>fustack-exceptions</artifactId>
         </dependency>
     </dependencies>
 </project>

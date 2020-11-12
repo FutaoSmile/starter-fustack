@@ -5,4 +5,5 @@ org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
   com.futao.starter.fustack.autoconfiguration.tecent.cloud.shortmessage.TencentCloudShortMessageAutoConfiguration,\
   com.futao.starter.fustack.autoconfiguration.auth.AuthAutoConfiguration,\
   com.futao.starter.fustack.autoconfiguration.exceptions.ExceptionAutoConfiguration,\
-  com.futao.starter.fustack.autoconfiguration.web.WebAutoConfiguration
+  com.futao.starter.fustack.autoconfiguration.web.WebAutoConfiguration,\
+  com.futao.starter.fustack.autoconfiguration.redis.RedisAutoConfiguration

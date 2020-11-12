@@ -38,4 +38,8 @@ public class Constants {
         public static final String USER_ID = "userId";
         public static final String EXPIRE = "expire";
     }
+
+    public static class Redis {
+        public static final String BASE_NAME = "redis";
+    }
 }

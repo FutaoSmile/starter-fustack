@@ -32,6 +32,8 @@
         <module>fustack-web</module>
         <module>fustack-auth</module>
         <module>fustack-exceptions</module>
+        <module>fustack-redis</module>
+        <module>fustack-utils</module>
     </modules>
 
     <properties>
@@ -107,8 +109,23 @@
                 <version>3.0.3</version>
             </dependency>
             <dependency>
+                <groupId>cn.hutool</groupId>
+                <artifactId>hutool-all</artifactId>
+                <version>5.3.5</version>
+            </dependency>
+            <dependency>
                 <groupId>com.futao</groupId>
                 <artifactId>fustack-consts</artifactId>
+                <version>0.0.1-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>com.futao</groupId>
+                <artifactId>fustack-redis</artifactId>
+                <version>0.0.1-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>com.futao</groupId>
+                <artifactId>fustack-utils</artifactId>
                 <version>0.0.1-SNAPSHOT</version>
             </dependency>
             <dependency>

@@ -12,4 +12,8 @@ public class RedisKeyConsts {
         //微信accessToken
         public static final String WX_ACCESS_TOKEN = Constants.System.FRAMEWORK_BASE_NAME + SEPARATOR + Constants.WxMiniProgram.WX_MINI_PROGRAM_BASE_NAME + SEPARATOR + "accessToken";
     }
+
+    public static class Redis {
+        public static final String PREFIX = Constants.System.FRAMEWORK_BASE_NAME + SEPARATOR + Constants.Redis.BASE_NAME + SEPARATOR;
+    }
 }
