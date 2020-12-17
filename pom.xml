@@ -220,10 +220,10 @@
 
     <scm>
         <!--可读的SCM地址-->
-        <connection>scm:git:https://github.com/FutaoSmile/starter-fustack</connection>
+<!--        <connection>scm:git:https://github.com/FutaoSmile/starter-fustack</connection>-->
         <!--可写的SCM地址-->
         <developerConnection>scm:git:https://github.com/FutaoSmile/starter-fustack</developerConnection>
         <!--可以在浏览器中访问的scm地址-->
-        <url>https://github.com/FutaoSmile/starter-fustack</url>
+<!--        <url>https://github.com/FutaoSmile/starter-fustack</url>-->
   </scm>
 </project>
