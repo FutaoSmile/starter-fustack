@@ -203,6 +203,7 @@
                 <configuration>
                     <source>${java.version}</source>
                     <target>${java.version}</target>
+                    <skip>true</skip>
                 </configuration>
             </plugin>
 
