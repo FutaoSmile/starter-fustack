@@ -13,7 +13,7 @@
 
     <groupId>com.futao</groupId>
     <artifactId>starter-fustack</artifactId>
-    <version>0.0.3</version>
+    <version>0.0.4-SNAPSHOT</version>
     <name>starter-fustack</name>
     <description>framework base springboot</description>
 
@@ -123,57 +123,57 @@
             <dependency>
                 <groupId>com.futao</groupId>
                 <artifactId>fustack-consts</artifactId>
-                <version>0.0.3</version>
+                <version>0.0.4-SNAPSHOT</version>
             </dependency>
             <dependency>
                 <groupId>com.futao</groupId>
                 <artifactId>fustack-redis</artifactId>
-                <version>0.0.3</version>
+                <version>0.0.4-SNAPSHOT</version>
             </dependency>
             <dependency>
                 <groupId>com.futao</groupId>
                 <artifactId>fustack-utils</artifactId>
-                <version>0.0.3</version>
+                <version>0.0.4-SNAPSHOT</version>
             </dependency>
             <dependency>
                 <groupId>com.futao</groupId>
                 <artifactId>fustack-web</artifactId>
-                <version>0.0.3</version>
+                <version>0.0.4-SNAPSHOT</version>
             </dependency>
             <dependency>
                 <groupId>com.futao</groupId>
                 <artifactId>fustack-exceptions</artifactId>
-                <version>0.0.3</version>
+                <version>0.0.4-SNAPSHOT</version>
             </dependency>
             <dependency>
                 <groupId>com.futao</groupId>
                 <artifactId>fustack-auth</artifactId>
-                <version>0.0.3</version>
+                <version>0.0.4-SNAPSHOT</version>
             </dependency>
             <dependency>
                 <groupId>com.futao</groupId>
                 <artifactId>fustack-wx-mini-program</artifactId>
-                <version>0.0.3</version>
+                <version>0.0.4-SNAPSHOT</version>
             </dependency>
             <dependency>
                 <groupId>com.futao</groupId>
                 <artifactId>fustack-tencent-cloud-short-message</artifactId>
-                <version>0.0.3</version>
+                <version>0.0.4-SNAPSHOT</version>
             </dependency>
             <dependency>
                 <groupId>com.futao</groupId>
                 <artifactId>fustack-db</artifactId>
-                <version>0.0.3</version>
+                <version>0.0.4-SNAPSHOT</version>
             </dependency>
             <dependency>
                 <groupId>com.futao</groupId>
                 <artifactId>fustack-autoconfiguration</artifactId>
-                <version>0.0.3</version>
+                <version>0.0.4-SNAPSHOT</version>
             </dependency>
             <dependency>
                 <groupId>com.futao</groupId>
                 <artifactId>fustack-foundation</artifactId>
-                <version>0.0.3</version>
+                <version>0.0.4-SNAPSHOT</version>
             </dependency>
             <dependency>
                 <groupId>de.codecentric</groupId>
@@ -243,6 +243,6 @@
         <developerConnection>scm:git:https://github.com/FutaoSmile/starter-fustack</developerConnection>
         <!--可以在浏览器中访问的scm地址-->
         <!--<url>https://github.com/FutaoSmile/starter-fustack</url>-->
-      <tag>release-0.0.4</tag>
+      <tag>HEAD</tag>
   </scm>
 </project>
