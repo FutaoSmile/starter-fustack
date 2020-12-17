@@ -6,6 +6,7 @@ import org.apache.commons.lang3.StringUtils;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 
 import java.time.Duration;
+import java.util.List;
 
 /**
  * @author futao
@@ -26,6 +27,31 @@ public class AuthProperties {
      */
     private Duration jwtDuration;
 
+    /**
+     * 需要跳过权限校验的方法
+     */
+    private List<String> skipAuthClassMethodList;
+
+    /**
+     * 需要跳过权限校验的class
+     */
+    private List<String> skipAuthClassList;
+
+    public List<String> getSkipAuthClassList() {
+        return skipAuthClassList;
+    }
+
+    public void setSkipAuthClassList(List<String> skipAuthClassList) {
+        this.skipAuthClassList = skipAuthClassList;
+    }
+
+    public List<String> getSkipAuthClassMethodList() {
+        return skipAuthClassMethodList;
+    }
+
+    public void setSkipAuthClassMethodList(List<String> skipAuthClassMethodList) {
+        this.skipAuthClassMethodList = skipAuthClassMethodList;
+    }
 
     public String getJwtSignKey() {
         if (StringUtils.isBlank(jwtSignKey)) {

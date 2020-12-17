@@ -1,7 +1,7 @@
 package com.futao.starter.fustack.db;
 
 import com.baomidou.mybatisplus.core.handlers.MetaObjectHandler;
-import com.futao.starter.fusstack.foundation.user.CurrentUserId;
+import com.futao.starter.fustack.auth.threadlocals.CurrentUserId;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.ibatis.reflection.MetaObject;
 import org.springframework.stereotype.Component;

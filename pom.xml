@@ -205,8 +205,24 @@
                     <target>${java.version}</target>
                 </configuration>
             </plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-release-plugin</artifactId>
+                <configuration>
+                    <tagBase>https://github.com/FutaoSmile/starter-fustack/tags</tagBase>
+                </configuration>
+            </plugin>
         </plugins>
     </build>
 
 
+    <scm>
+        <!--可读的SCM地址-->
+        <connection>scm:git:https://github.com/FutaoSmile/starter-fustack/tags</connection>
+        <!--可写的SCM地址-->
+        <developerConnection>scm:git:https://github.com/FutaoSmile/starter-fustack/tags</developerConnection>
+        <!--可以在浏览器中访问的scm地址-->
+        <url>https://github.com/FutaoSmile/starter-fustack</url>
+    </scm>
 </project>
