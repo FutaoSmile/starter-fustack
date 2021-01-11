@@ -9,6 +9,8 @@ import java.time.Duration;
 import java.util.List;
 
 /**
+ * 配置
+ *
  * @author futao
  * @date 2020/11/11
  */
@@ -18,7 +20,7 @@ public class AuthProperties {
     public static final String PREFIX = Constants.System.FRAMEWORK_BASE_NAME + "." + Constants.Auth.BASE_NAME;
 
     /**
-     * jwt加密的key
+     * jwt加密的key-长度有限制
      */
     private String jwtSignKey;
 
@@ -36,6 +38,18 @@ public class AuthProperties {
      * 需要跳过权限校验的class
      */
     private List<String> skipAuthClassList;
+    /**
+     * 需要跳过权限检查的URL
+     */
+    private List<String> skipAuthPathList;
+    /**
+     * 是否前后端分离
+     */
+    private boolean separationOfFrontAndRearEnds;
+    /**
+     * 无权限重定向页面
+     */
+    private String noAuth401Page;
 
     public List<String> getSkipAuthClassList() {
         return skipAuthClassList;
@@ -73,5 +87,29 @@ public class AuthProperties {
 
     public void setJwtDuration(Duration jwtDuration) {
         this.jwtDuration = jwtDuration;
+    }
+
+    public String getNoAuth401Page() {
+        return noAuth401Page;
+    }
+
+    public void setNoAuth401Page(String noAuth401Page) {
+        this.noAuth401Page = noAuth401Page;
+    }
+
+    public boolean isSeparationOfFrontAndRearEnds() {
+        return separationOfFrontAndRearEnds;
+    }
+
+    public void setSeparationOfFrontAndRearEnds(boolean separationOfFrontAndRearEnds) {
+        this.separationOfFrontAndRearEnds = separationOfFrontAndRearEnds;
+    }
+
+    public List<String> getSkipAuthPathList() {
+        return skipAuthPathList;
+    }
+
+    public void setSkipAuthPathList(List<String> skipAuthPathList) {
+        this.skipAuthPathList = skipAuthPathList;
     }
 }

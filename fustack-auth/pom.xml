@@ -41,5 +41,9 @@
             <groupId>com.futao</groupId>
             <artifactId>fustack-consts</artifactId>
         </dependency>
+        <dependency>
+            <groupId>com.futao</groupId>
+            <artifactId>fustack-utils</artifactId>
+        </dependency>
     </dependencies>
 </project>

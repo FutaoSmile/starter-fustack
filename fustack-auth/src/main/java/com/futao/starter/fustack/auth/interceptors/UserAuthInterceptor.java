@@ -4,7 +4,9 @@ import com.futao.starter.fustack.auth.annotations.SkipUserAuth;
 import com.futao.starter.fustack.auth.auth.UserAuth;
 import com.futao.starter.fustack.auth.autoconfiguration.AuthProperties;
 import com.futao.starter.fustack.auth.threadlocals.CurrentUserId;
+import com.futao.starter.fustack.utils.WebUtil;
 import lombok.extern.slf4j.Slf4j;
+import org.apache.commons.collections4.CollectionUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.method.HandlerMethod;
 import org.springframework.web.servlet.HandlerInterceptor;
@@ -36,6 +38,7 @@ public class UserAuthInterceptor implements HandlerInterceptor {
                     || handlerMethod.getMethod().getDeclaringClass().isAnnotationPresent(SkipUserAuth.class)
                     || (authProperties.getSkipAuthClassList() != null && authProperties.getSkipAuthClassList().contains(handlerMethod.getMethod().getDeclaringClass().getName()))
                     || (authProperties.getSkipAuthClassMethodList() != null && authProperties.getSkipAuthClassMethodList().contains(handlerMethod.getMethod().getName()))
+                    || CollectionUtils.isNotEmpty(authProperties.getSkipAuthPathList()) && authProperties.getSkipAuthPathList().contains(WebUtil.servletRequestAttributes().getRequest().getRequestURI())
             ) {
                 log.debug("skip user auth interceptor");
                 return true;
