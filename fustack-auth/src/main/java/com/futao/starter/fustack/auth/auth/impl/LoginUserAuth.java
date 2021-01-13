@@ -7,7 +7,7 @@ import com.futao.starter.fustack.auth.threadlocals.CurrentUserId;
 import com.futao.starter.fustack.consts.Constants;
 import com.futao.starter.fustack.consts.SystemErrorMessages;
 import com.futao.starter.fustack.exceptions.LogicException;
-import com.futao.starter.fustack.utils.WebUtil;
+import com.futao.starter.fustack.util.WebUtils;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -56,8 +56,8 @@ public class LoginUserAuth implements UserAuth {
      * 提示或转发
      */
     private void notAuth() {
-        HttpServletResponse response = WebUtil.servletRequestAttributes().getResponse();
-        HttpServletRequest request = WebUtil.servletRequestAttributes().getRequest();
+        HttpServletResponse response = WebUtils.servletRequestAttributes().getResponse();
+        HttpServletRequest request = WebUtils.servletRequestAttributes().getRequest();
         if (authProperties.isSeparationOfFrontAndRearEnds()) {
             throw new LogicException(SystemErrorMessages.NOT_LOGIN);
         } else {

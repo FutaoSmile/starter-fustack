@@ -1,4 +1,4 @@
-package com.futao.starter.fustack.utils;
+package com.futao.starter.fustack.util;
 
 import org.apache.commons.lang3.RandomStringUtils;
 
@@ -8,7 +8,7 @@ import java.util.UUID;
  * @author futao
  * @date 2020/11/12
  */
-public class RandomUtil extends RandomStringUtils {
+public class RandomUtils extends RandomStringUtils {
 
     /**
      * 随机UUID，删除了`-`
