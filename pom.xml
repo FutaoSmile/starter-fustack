@@ -41,6 +41,7 @@
         <module>fustack-redis</module>
         <!--工具包-->
         <module>fustack-utils</module>
+        <module>fustack-freemarker</module>
     </modules>
 
     <properties>
