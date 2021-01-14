@@ -16,4 +16,7 @@ public class TimeUtils {
     public static LocalDateTime currentLocalDateTime() {
         return LocalDateTime.now(ZoneOffset.ofHours(8));
     }
+
+    private TimeUtils() {
+    }
 }

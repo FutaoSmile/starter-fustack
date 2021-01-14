@@ -18,4 +18,7 @@ public class RandomUtils extends RandomStringUtils {
     public static String uuid() {
         return UUID.randomUUID().toString().replace("-", "");
     }
+
+    private RandomUtils() {
+    }
 }

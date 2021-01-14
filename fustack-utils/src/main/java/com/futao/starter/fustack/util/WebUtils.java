@@ -9,12 +9,12 @@ import org.springframework.web.context.request.ServletRequestAttributes;
  */
 public class WebUtils {
 
-    private WebUtils() {
-    }
-
     public static ServletRequestAttributes servletRequestAttributes() {
         return (ServletRequestAttributes) RequestContextHolder.currentRequestAttributes();
     }
 
+
+    private WebUtils() {
+    }
 
 }
