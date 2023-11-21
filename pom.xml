@@ -247,14 +247,6 @@
         </plugins>
     </build>
 
-    <distributionManagement>
-        <repository>
-            <id>ishanggang-releases</id>
-            <url>https://maven.ishanggang.com/repository/maven-releases/</url>
-        </repository>
-    </distributionManagement>
-
-
     <scm>
         <!--可读的SCM地址-->
         <!--<connection>scm:git:https://github.com/FutaoSmile/starter-fustack</connection>-->
