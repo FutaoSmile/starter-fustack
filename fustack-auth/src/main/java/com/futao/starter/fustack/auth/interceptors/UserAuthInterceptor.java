@@ -57,5 +57,6 @@ public class UserAuthInterceptor implements HandlerInterceptor {
     @Override
     public void afterCompletion(HttpServletRequest request, HttpServletResponse response, Object handler, Exception ex) throws Exception {
         CurrentUserId.remove();
+        log.info("清除线程缓存");
     }
 }
